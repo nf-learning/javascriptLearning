@@ -78,3 +78,19 @@
 // console.log(isEven(-1));
 
 
+function countBs(str){
+    return countChar(str, 'B')
+}
+function countChar(str, aChar){
+    let countChar = 0;
+    for (let i=0; i < str.length;i++){
+        if (str[i]==aChar){
+            countChar+=1;
+        }
+    }
+    return countChar;
+}
+
+
+console.log(countBs("BBasdfsdfB"));
+
